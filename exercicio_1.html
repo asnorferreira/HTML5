@@ -1,0 +1,46 @@
+<!--Deve conter radio, slect, checkbox, text-->
+<!--Deve conter date, email, textarea, submit-->
+<!--Atributos: method="get" action="teste.jsp"-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Pedido sushi</h1>
+    <form method="get" action="teste.jsp"> <!--post, manda os atributos, mas não copia o link de acesso-->
+        <!--get, manda os atributos e copia o link de acesso-->
+        Nome: <input type="text" name="nome"> <br>
+        Email: <input type="email" name="email"> <br>
+        Tamanho do Supreme: <!--caso desejemos deixar uma opção marcada por padrão, usar o comando checked-->
+        <input type="radio" name="tipo" value="g"> Grande
+        <input type="radio" name="tipo" value="m"> Médio
+        <input type="radio" name="tipo" value="p"> Pequeno
+        <br>
+        Sabor: <select> name="sabor"
+            <option>Salmão</option>
+            <option>Camarão</option>
+            <option>Kani</option>
+        </select>
+        <br>
+        Adiconais:
+        <input type="checkbox" name="Molho shoyu" value="sim"> Shoyu
+        <input type="checkbox" name="Molho teriaki" value="sim"> Teriaki
+        <br>
+        Data de entrega: <input type="date" name="dataEntrega">
+        <br> 
+        Comentário do pedido: <br>
+        <textarea name="mensagem" rows="10" cols="30"></textarea>
+        <br>
+        <input type="submit">
+
+
+    </form>
+    
+</body>
+</html>
